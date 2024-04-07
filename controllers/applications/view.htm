@@ -1,0 +1,41 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('softworkspy/appconfig/applications') ?>">Aplicaciones</a></li>
+        <li><?= e($this->pageTitle) ?></li>
+    </ul>
+<?php Block::endPut() ?>
+
+<h2>
+    <?php if ( $model->icon ) : ?>
+        <img src="<?= $model->icon->getThumb(40, 40, ['mode'=>'crop']) ?>" alt="Icon">
+    <?php endif; ?>
+    
+    <?= $model->name; ?>
+    <i class="oc-icon-circle" style="color: <?= $model->primary_color ?>"></i>
+    <i class="oc-icon-circle" style="color: <?= $model->secondary_color ?>"></i>
+    <i class="oc-icon-circle" style="color: <?= $model->background_color ?>"></i>
+</h2>
+
+<div class="control-toolbar">
+    <div class="toolbar-item toolbar-primary">
+        <div data-control="toolbar">
+            <a href="<?= Backend::url('softworkspy/appconfig/applications/update/'.$model->id) ?>" class="btn btn-default oc-icon-gear">Configuración</a>
+            <button type="button" class="btn btn-default oc-icon-send">Enviar Notificación</button>
+        </div>
+    </div>
+</div>
+
+<div class="control-tabs content-tabs" data-control="tab">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#usersTab">Usuarios</a></li>
+        <li><a href="#notificationsTab">Notificaciones</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active">
+            <?= $userListWidget->render() ?>
+        </div>
+        <div class="tab-pane">
+            <?= $notificationListWidget->render() ?>
+        </div>
+    </div>
+</div>

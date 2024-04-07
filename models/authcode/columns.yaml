@@ -1,0 +1,29 @@
+columns:
+    id:
+        label: ID
+        type: number
+        searchable: true
+        invisible: true
+        sortable: true
+    code:
+        label: 'softworkspy.appconfig::lang.authCode.code'
+        type: text
+        searchable: true
+        sortable: false
+    is_active:
+        label: 'softworkspy.appconfig::lang.application.is_active'
+        type: switch
+        sortable: true
+    created_at:
+        label: 'softworkspy.appconfig::lang.authCode.created_at'
+        type: datetime
+        invisible: false
+        sortable: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        invisible: true
+    deleted_at:
+        label: deleted_at
+        type: datetime
+        invisible: true

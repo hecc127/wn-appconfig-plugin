@@ -1,0 +1,12 @@
+title: Applications
+modelClass: SoftWorksPy\AppConfig\Models\Application
+list: $/softworkspy/appconfig/models/application/columns.yaml
+recordUrl: "softworkspy/appconfig/applications/update/:id"
+noRecordsMessage: "backend::lang.list.no_records"
+recordsPerPage: "10"
+showSetup: true
+showCheckboxes: false
+toolbar:
+  buttons: list_toolbar
+  search:
+    prompt: "backend::lang.list.search_prompt"

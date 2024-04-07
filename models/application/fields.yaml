@@ -1,0 +1,148 @@
+secondaryTabs:
+  stretch: true
+  defaultTab: softworkspy.appconfig::lang.application.tab_general
+  icons:
+    softworkspy.appconfig::lang.application.tab_general: icon-file-text-o
+    softworkspy.appconfig::lang.application.tab_versions: icon-check-circle-o
+    softworkspy.appconfig::lang.application.tab_colors: icon-paint-brush
+    softworkspy.appconfig::lang.application.tab_images: icon-picture-o
+    softworkspy.appconfig::lang.application.tab_others: icon-wrench
+    Codes: icon-id-card
+  fields:
+    name:
+      label: "softworkspy.appconfig::lang.application.name"
+      oc.commentPosition: ""
+      span: auto
+      type: text
+    is_active:
+      label: "softworkspy.appconfig::lang.application.is_active"
+      span: auto
+      type: switch
+    description:
+      label: "softworkspy.appconfig::lang.application.description"
+      size: large
+      oc.commentPosition: ""
+      span: full
+      type: textarea
+    versions:
+      label: "softworkspy.appconfig::lang.application.versions"
+      type: partial
+      path: versions_partial
+      context:
+        - update
+        - preview
+      tab: "softworkspy.appconfig::lang.application.tab_versions"
+    primary_color:
+      label: "softworkspy.appconfig::lang.application.primary_color"
+      oc.commentPosition: ""
+      span: auto
+      type: colorpicker
+      tab: "softworkspy.appconfig::lang.application.tab_colors"
+    secondary_color:
+      label: "softworkspy.appconfig::lang.application.secondary_color"
+      oc.commentPosition: ""
+      span: auto
+      type: colorpicker
+      tab: "softworkspy.appconfig::lang.application.tab_colors"
+    background_color:
+      label: "softworkspy.appconfig::lang.application.background_color"
+      oc.commentPosition: ""
+      span: auto
+      type: colorpicker
+      tab: "softworkspy.appconfig::lang.application.tab_colors"
+    icon:
+      label: "softworkspy.appconfig::lang.application.icon"
+      oc.commentPosition: ""
+      mode: image
+      imageWidth: "100"
+      imageHeight: "100"
+      fileTypes: "png,jpg,jpeg"
+      useCaption: true
+      thumbOptions:
+        mode: crop
+        extension: auto
+      span: auto
+      type: fileupload
+      tab: "softworkspy.appconfig::lang.application.tab_images"
+    logo:
+      label: "softworkspy.appconfig::lang.application.logo"
+      oc.commentPosition: ""
+      mode: image
+      useCaption: true
+      thumbOptions:
+        mode: crop
+        extension: auto
+      span: left
+      type: fileupload
+      tab: "softworkspy.appconfig::lang.application.tab_images"
+    background:
+      label: "softworkspy.appconfig::lang.application.background"
+      oc.commentPosition: ""
+      mode: image
+      useCaption: true
+      thumbOptions:
+        mode: crop
+        extension: auto
+      span: auto
+      type: fileupload
+      tab: "softworkspy.appconfig::lang.application.tab_images"
+    images:
+      label: "softworkspy.appconfig::lang.application.images"
+      oc.commentPosition: ""
+      mode: image
+      useCaption: true
+      thumbOptions:
+        mode: crop
+        extension: auto
+      span: full
+      type: fileupload
+      tab: "softworkspy.appconfig::lang.application.tab_images"
+    files:
+      label: "softworkspy.appconfig::lang.application.files"
+      span: full
+      oc.commentPosition: ""
+      mode: file
+      useCaption: true
+      thumbOptions:
+        mode: crop
+        extension: auto
+      type: fileupload
+      tab: "softworkspy.appconfig::lang.application.tab_others"
+    other_settings:
+      label: "softworkspy.appconfig::lang.application.other_settings"
+      oc.commentPosition: ""
+      prompt: "Agregar configuración"
+      span: full
+      type: repeater
+      tab: "softworkspy.appconfig::lang.application.tab_others"
+      form:
+        fields:
+          key:
+            label: "softworkspy.appconfig::lang.application.otherSettings.key"
+            oc.commentPosition: ""
+            span: auto
+            preset:
+              field: key
+              type: slug
+            type: text
+          value:
+            label: "softworkspy.appconfig::lang.application.otherSettings.value"
+            oc.commentPosition: ""
+            span: auto
+            type: text
+    identity_code:
+      label: 'Identity Code'
+      type: 'partial'
+      path: 'echo_field'
+      tab: 'Codes'
+      context:
+        - 'update'
+        - 'preview'
+    authCodes:
+      label: 'Códigos de autorización'
+      type: 'partial'
+      path: relation_auth_codes
+      tab: 'Codes'
+      context:
+        - 'update'
+        - 'preview'

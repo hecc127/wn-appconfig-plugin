@@ -1,0 +1,20 @@
+fields:
+    _title_section:
+        label: 'softworkspy.appconfig::lang.settings.settings.label'
+        type: section
+        span: full
+        comment: 'softworkspy.appconfig::lang.settings.settings.description'
+    enabled_authentication:
+        label: 'softworkspy.appconfig::lang.settings.enabled_authentication'
+        comment: 'softworkspy.appconfig::lang.settings.enabled_comment'
+        span: full
+        type: switch
+    class_authentication:
+        label: 'softworkspy.appconfig::lang.settings.class_authentication'
+        comment: 'softworkspy.appconfig::lang.settings.class_comment'
+        span: full
+        type: text
+        trigger:
+            action: show
+            field: enabled_authentication
+            condition: checked

@@ -1,0 +1,16 @@
+columns:
+    name:
+        label: 'softworkspy.appconfig::lang.application.name'
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: 'softworkspy.appconfig::lang.application.description'
+        type: text
+        searchable: true
+        invisible: true
+        sortable: false
+    is_active:
+        label: 'softworkspy.appconfig::lang.application.is_active'
+        type: switch
+        sortable: true

@@ -1,0 +1,28 @@
+plugin:
+    name: 'softworkspy.appconfig::lang.plugin.name'
+    description: 'softworkspy.appconfig::lang.plugin.description'
+    author: SoftWorksPy
+    icon: oc-icon-rss
+    homepage: ''
+permissions:
+    softworkspy.appconfig.manage_applications:
+        tab: 'softworkspy.appconfig::lang.plugin.name'
+        label: 'softworkspy.appconfig::lang.permissions.manage_applications'
+    softworkspy.appconfig.activate_applications:
+        tab: 'softworkspy.appconfig::lang.plugin.name'
+        label: 'softworkspy.appconfig::lang.permissions.activate_applications'
+    softworkspy.appconfig.view_applications_codes:
+        tab: 'softworkspy.appconfig::lang.plugin.name'
+        label: 'softworkspy.appconfig::lang.permissions.view_applications_codes'
+    softworkspy.appconfig.access_settings:
+        tab: 'softworkspy.appconfig::lang.plugin.name'
+        label: 'softworkspy.appconfig::lang.permissions.access_settings'
+navigation:
+    applications:
+        label: 'softworkspy.appconfig::lang.menu.applications'
+        url: softworkspy/appconfig/applications
+        icon: icon-mobile
+        iconSvg: 'plugins/softworkspy/appconfig/assets/images/icon.svg'
+        permissions:
+            - softworkspy.appconfig.manage_applications
+            - softworkspy.appconfig.activate_applications

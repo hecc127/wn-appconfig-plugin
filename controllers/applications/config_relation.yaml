@@ -1,0 +1,21 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+versions:
+  label: Versiones
+  manage:
+    form: $/softworkspy/appconfig/models/version/fields.yaml
+    list: $/softworkspy/appconfig/models/version/columns.yaml
+  view:
+    list: $/softworkspy/appconfig/models/version/columns.yaml
+    toolbarButtons: create|delete
+
+authCodes:
+  label: "Códigos de autorización"
+  manage:
+    form: $/softworkspy/appconfig/models/authcode/fields.yaml
+    list: $/softworkspy/appconfig/models/authcode/columns.yaml
+  view:
+    list: $/softworkspy/appconfig/models/authcode/columns.yaml
+    toolbarButtons: create|delete

@@ -1,0 +1,25 @@
+columns:
+    id:
+        label: 'softworkspy.appconfig::lang.version.id'
+        type: number
+        searchable: false
+        invisible: true
+        sortable: true
+    created_at:
+        label: 'softworkspy.appconfig::lang.version.created_at'
+        type: datetime
+        sortable: true
+    number:
+        label: 'softworkspy.appconfig::lang.version.number'
+        type: text
+        searchable: true
+        sortable: false
+    important:
+        label: 'softworkspy.appconfig::lang.version.important'
+        type: switch
+        sortable: false
+    is_approved:
+        label: 'softworkspy.appconfig::lang.version.is_approved'
+        type: switch
+        searchable: false
+        sortable: true

@@ -1,0 +1,25 @@
+fields:
+    important:
+        label: 'softworkspy.appconfig::lang.version.important'
+        span: auto
+        type: switch
+    is_approved:
+        label: 'softworkspy.appconfig::lang.version.is_approved'
+        span: auto
+        type: switch
+    number:
+        label: 'softworkspy.appconfig::lang.version.number'
+        span: auto
+        placeholder: 'El número de la nueva versión.'
+        required: 1
+        type: text
+        comment: 'Se aceptan cualquier tipo de caracteres.'
+    url:
+        label: 'softworkspy.appconfig::lang.version.url'
+        span: auto
+        type: text
+    message:
+        label: 'softworkspy.appconfig::lang.version.message'
+        size: small
+        span: full
+        type: textarea

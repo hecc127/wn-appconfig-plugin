@@ -1,0 +1,10 @@
+name: Applications
+form: $/softworkspy/appconfig/models/application/fields.yaml
+modelClass: SoftWorksPy\AppConfig\Models\Application
+defaultRedirect: softworkspy/appconfig/applications
+create:
+  redirect: "softworkspy/appconfig/applications/update/:id"
+  redirectClose: softworkspy/appconfig/applications
+update:
+  redirect: "softworkspy/appconfig/applications/update/:id"
+  redirectClose: "softworkspy/appconfig/applications"

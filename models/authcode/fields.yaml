@@ -1,0 +1,9 @@
+fields:
+    code:
+        label: 'softworkspy.appconfig::lang.authCode.code'
+        span: auto
+        type: text
+    is_active:
+        label: 'softworkspy.appconfig::lang.authCode.is_active'
+        span: auto
+        type: switch

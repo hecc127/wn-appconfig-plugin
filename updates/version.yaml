@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table softworkspy_appconfig_applications'
+    - builder_table_create_softworkspy_appconfig_applications.php
+1.0.3:
+    - 'Created table softworkspy_appconfig_versions'
+    - builder_table_create_softworkspy_appconfig_versions.php
+1.0.4:
+    - 'Created table softworkspy_appconfig_auth_codes'
+    - builder_table_create_softworkspy_appconfig_auth_codes.php
