@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Support\Str;
 use SoftWorksPy\AppConfig\Models\Settings;
 use SoftWorksPy\AppConfig\Models\Application;
-use SoftWorksPy\Foundation\RestApi\SimpleResponse;
+use SoftWorksPy\AppConfig\Api\SimpleResponse;
 
 class AuthorizationControl
 {

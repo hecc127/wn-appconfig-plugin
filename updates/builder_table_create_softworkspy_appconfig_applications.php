@@ -20,6 +20,9 @@ class BuilderTableCreateSoftWorksPyAppConfigApp extends Migration
             $table->text('other_settings')->nullable();
             $table->string('identity_code', 110)->nullable();
             $table->boolean('is_active')->default(0);
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
     
